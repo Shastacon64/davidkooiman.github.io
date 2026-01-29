@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Kooiman | Senior IT Operations Specialist</title>
+    <title>David Kooiman | IT Professional</title>
     <style>
         /* --- CSS STYLES --- */
         :root {
@@ -36,7 +36,7 @@
         }
 
         h1 { margin: 0; font-size: 2.5rem; color: #111; letter-spacing: -0.5px; }
-        .title { color: var(--primary-color); font-weight: 600; font-size: 1.25rem; margin-top: 5px; }
+        
         .contact-bar { margin-top: 15px; font-size: 0.95rem; color: #555; }
         .contact-bar a { color: var(--primary-color); text-decoration: none; font-weight: 500; }
         .contact-bar span { margin: 0 8px; color: #ccc; }
@@ -58,21 +58,6 @@
         .company { color: #555; font-weight: 500; }
         .date { color: #777; font-size: 0.9rem; font-style: italic; }
         .job-details li { margin-bottom: 8px; color: #444; }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-        }
-        .skill-tag {
-            background: var(--secondary-color);
-            padding: 8px 15px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            border: 1px solid #e5e5e5;
-        }
 
         /* Certifications */
         .cert-list { list-style: none; padding: 0; }
@@ -96,11 +81,12 @@
     <div class="container">
         <header>
             <h1>David Kooiman</h1>
-            <div class="title">Senior IT Operations Specialist</div>
             <div class="contact-bar">
                 Houston, TX
                 <span>|</span>
                 <a href="mailto:shastacon64@gmail.com">shastacon64@gmail.com</a>
+                <span>|</span>
+                713-677-9250
                 <span>|</span>
                 <a href="https://www.linkedin.com/in/david-kooiman-09626813/">LinkedIn</a>
                 <span>|</span>
@@ -111,35 +97,36 @@
         <section>
             <h2>Professional Summary</h2>
             <p>
-                [cite_start]Senior IT Operations Specialist with over 18 years of experience managing enterprise infrastructure across Government, Banking, Energy, and Retail sectors[cite: 1]. 
-                [cite_start]A versatile technical leader who bridges the gap between hands-on engineering—ranging from Data Center operations and Network Architecture to Endpoint Automation—and strategic operational improvement[cite: 1]. 
-                [cite_start]Proven track record of executing complex multi-site migrations, ensuring regulatory compliance (CJIS/Audit), and standardizing IT processes for efficiency[cite: 1].
+                Senior IT Operations Specialist with over 18 years of experience managing enterprise infrastructure across Government, Banking, Energy, and Retail sectors. 
+                A versatile technical leader who bridges the gap between hands-on engineering—ranging from Data Center operations and Network Architecture to Endpoint Automation—and strategic operational improvement. 
+                Proven track record of executing complex multi-site migrations, ensuring regulatory compliance (CJIS/Audit), and standardizing IT processes for efficiency.
             </p>
         </section>
 
         <section>
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-tag">Cisco Networking (L2/L3, 9300 Switches)</div>
-                <div class="skill-tag">Microsoft Autopilot & Intune</div>
-                <div class="skill-tag">Tanium (Asset Mgmt & Patching)</div>
-                <div class="skill-tag">ServiceNow Incident Management</div>
-                <div class="skill-tag">VMware vSphere 6.5 / ESXi</div>
-                <div class="skill-tag">FortiGate Firewalls</div>
-                <div class="skill-tag">Windows Server / Active Directory</div>
-                <div class="skill-tag">Disaster Recovery (Veeam)</div>
+            <h2>What I am working on</h2>
+            <p style="font-style: italic; color: #666; margin-bottom: 20px;">
+                Current personal development projects focused on Cloud Administration and Architecture.
+            </p>
+            
+            <div class="job-item">
+                <div class="job-title">Azure Administrator Infrastructure Lab (AZ-104 Prep)</div>
+                <div style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">Technologies: Azure VNETs, Network Security Groups (NSGs), Storage Accounts, RBAC</div>
+                <p>
+                    Designed and deployed a hybrid cloud environment to master core Azure administrative tasks. 
+                    Configured VNET peering between regions to test connectivity and implemented Network Security Groups (NSGs) to control traffic flow. 
+                    Managed Azure Storage accounts with lifecycle management policies and enforced security via Role-Based Access Control (RBAC).
+                </p>
             </div>
-        </section>
 
-        <section>
-            <h2>Engineering Labs & Projects</h2>
             <div class="job-item">
-                <div class="job-title">Microsoft Azure Hacking Lab</div>
-                <p>Built a secure hacking lab in Azure to simulate an enterprise network. Deployed Windows Server 2022 Domain Controllers and segmented VNETs within Resource Groups to simulate subnets, utilizing Azure Monitor for performance tracking.</p>
-            </div>
-            <div class="job-item">
-                <div class="job-title">Cisco/Palo Alto Cloud Network</div>
-                <p>Deployed GNS3 in Azure to build Cisco networking topologies. Integrated Palo Alto firewalls and automated network changes using Python scripts and the Netmiko library.</p>
+                <div class="job-title">Microsoft 365 Enterprise Lab (MS-102 Prep)</div>
+                <div style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">Technologies: Microsoft 365 Developer Tenant, Entra ID (Azure AD), Intune, PowerShell</div>
+                <p>
+                    Configured a comprehensive Microsoft 365 Developer Tenant to simulate a real-world enterprise environment. 
+                    Key configurations include setting up custom domains, managing user identities via Entra ID, and implementing Conditional Access policies to secure resources. 
+                    Deployed Intune compliance policies for device management and tested data loss prevention (DLP) rules.
+                </p>
             </div>
         </section>
 
@@ -155,10 +142,10 @@
                     <span class="date">Sept 2020 - Jan 2026</span>
                 </div>
                 <ul class="job-details">
-                    [cite_start]<li><strong>Network & Infrastructure:</strong> Maintain the integrity of Houston’s network infrastructure, including structured cabling in IDF rooms and troubleshooting Layer 2/3 issues on Cisco 9300 switches[cite: 1].</li>
-                    [cite_start]<li><strong>Endpoint Engineering:</strong> Streamline device lifecycle management by utilizing Microsoft Autopilot for automated deployments and Tanium for real-time asset management[cite: 1].</li>
-                    [cite_start]<li><strong>Process Improvement:</strong> Mentor IT Operations specialists and author technical documentation/SOPs to standardize team processes[cite: 1].</li>
-                    [cite_start]<li><strong>Executive Support:</strong> Provide "white-glove" technical support to executive leadership, ensuring rapid resolution of high-priority hardware issues[cite: 1].</li>
+                    <li><strong>Network & Infrastructure:</strong> Maintain the integrity of Houston’s network infrastructure, including structured cabling in IDF rooms and troubleshooting Layer 2/3 issues on Cisco 9300 switches.</li>
+                    <li><strong>Endpoint Engineering:</strong> Streamline device lifecycle management by utilizing Microsoft Autopilot for automated deployments and Tanium for real-time asset management and security patching.</li>
+                    <li><strong>Team Leadership:</strong> Mentor IT Operations specialists and author technical documentation/SOPs to standardize team processes.</li>
+                    <li><strong>Incident Management:</strong> Manage IT service requests via ServiceNow, ensuring accurate tracking and adherence to SLAs.</li>
                 </ul>
             </div>
 
@@ -171,9 +158,24 @@
                     <span class="date">May 2018 - March 2020</span>
                 </div>
                 <ul class="job-details">
-                    [cite_start]<li><strong>Retail Operations:</strong> Ensured business continuity for remote retail locations by providing Tier 2 support for Oracle Xstore POS and hardware peripherals[cite: 1].</li>
-                    [cite_start]<li><strong>Remote Network Admin:</strong> Managed connectivity and security for distributed sites, troubleshooting FortiGate firewalls to minimize store downtime[cite: 1].</li>
-                    [cite_start]<li><strong>System Monitoring:</strong> Proactively monitored health and workstation performance across remote sites to identify outages before impact[cite: 1].</li>
+                    <li><strong>Retail Operations:</strong> Ensured business continuity for remote retail locations by providing Tier 2 support for Oracle Xstore POS applications.</li>
+                    <li><strong>Remote Network Admin:</strong> Managed connectivity and security for distributed sites, troubleshooting FortiGate firewalls to minimize store downtime.</li>
+                    <li><strong>System Monitoring:</strong> Proactively monitored health and workstation performance across remote sites identifying outages before impact.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Storage Administrator (Contract)</span>
+                        <span class="company"> | DXC Technology</span>
+                    </div>
+                    <span class="date">Jan 2018 - May 2018</span>
+                </div>
+                <ul class="job-details">
+                    <li><strong>Enterprise Storage:</strong> Executed high-volume storage allocations and data migrations for enterprise clients.</li>
+                    <li><strong>Automation:</strong> Leveraged proprietary automation tools (SAT) to streamline storage delivery and mass-provisioning.</li>
+                    <li><strong>Process Troubleshooting:</strong> Diagnosed and resolved failures in automated batch processes to prevent service delays.</li>
                 </ul>
             </div>
 
@@ -186,9 +188,68 @@
                     <span class="date">June 2016 - Sept 2017</span>
                 </div>
                 <ul class="job-details">
-                    [cite_start]<li><strong>Infrastructure Migration:</strong> Orchestrated a complete IT infrastructure relocation (Windows/Network), migrating the data center and remote sites in just seven days with minimal downtime[cite: 1].</li>
-                    [cite_start]<li><strong>Virtualization:</strong> Managed a VMware vSphere 6.5 environment, optimizing Type 1 hypervisor performance by analyzing resource metrics[cite: 1].</li>
-                    [cite_start]<li><strong>Network Security:</strong> Secured the edge using WatchGuard M570 appliances and implemented VoIP solutions for remote site connectivity[cite: 1].</li>
+                    <li><strong>Infrastructure Migration:</strong> Orchestrated a complete IT infrastructure relocation (Data Center & Remote Sites) in just seven days with minimal downtime.</li>
+                    <li><strong>Virtualization:</strong> Managed a VMware vSphere 6.5 environment, analyzing resource metrics to right-size CPU/RAM for guest VMs.</li>
+                    <li><strong>Network Security:</strong> Secured the edge using WatchGuard M570 appliances and implemented VoIP solutions.</li>
+                    <li><strong>Admin:</strong> Managed Active Directory, Exchange 2010, SQL Server 2012, and Veeam backup strategies.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Web Hosting Engineer (Contract)</span>
+                        <span class="company"> | Hewlett Packard Enterprise</span>
+                    </div>
+                    <span class="date">March 2016 - June 2016</span>
+                </div>
+                <ul class="job-details">
+                    <li><strong>IIS Migration:</strong> Migrated legacy web applications from Windows Server 2003 (IIS 6.0) to Windows Server 2008 R2 (IIS 7.5).</li>
+                    <li><strong>Security Compliance:</strong> Managed the lifecycle of SSL certificates to ensure secure, encrypted connections.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Systems Administrator (Contract)</span>
+                        <span class="company"> | Repsol</span>
+                    </div>
+                    <span class="date">May 2014 - Jan 2016</span>
+                </div>
+                <ul class="job-details">
+                    <li><strong>Data Center Ops:</strong> Managed critical Gas & Power applications and supported the migration of Dell hardware to the CyrusOne colocation facility.</li>
+                    <li><strong>License Admin:</strong> Managed FlexLM license servers for high-value Schlumberger applications.</li>
+                    <li><strong>IAM:</strong> Administered Active Directory global groups and developed automated reporting for inactive user accounts.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Network Operations Specialist</span>
+                        <span class="company"> | Wood Forest National Bank</span>
+                    </div>
+                    <span class="date">May 2013 - May 2014</span>
+                </div>
+                <ul class="job-details">
+                    <li><strong>NOC Operations:</strong> Monitored critical banking transaction systems using SCOM 2012 and SolarWinds Orion.</li>
+                    <li><strong>Incident Response:</strong> Acted as the primary escalation point for mission-critical technical calls, consistently meeting strict SLAs.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">IT Specialist</span>
+                        <span class="company"> | City of Jersey Village</span>
+                    </div>
+                    <span class="date">Dec 2007 - May 2013</span>
+                </div>
+                <ul class="job-details">
+                    <li><strong>Infrastructure:</strong> Managed city-wide IT operations, including Avaya VoIP, Cisco routers, and Coban in-car camera systems.</li>
+                    <li><strong>Virtualization:</strong> Architected a virtualized environment by deploying VMware ESX 4.0 and an HP MSA 2012i SAN.</li>
+                    <li><strong>Process Improvement:</strong> Modernized support workflow by implementing Spiceworks as the centralized Help Desk portal.</li>
                 </ul>
             </div>
         </section>
@@ -196,11 +257,11 @@
         <section>
             <h2>Certifications</h2>
             <ul class="cert-list">
-                [cite_start]<li><strong>Microsoft AZ-400:</strong> Azure Administrator (Est. Completion: March 2026) [cite: 1]</li>
-                [cite_start]<li><strong>Microsoft MS-102:</strong> Microsoft 365 Administration (Est. Completion: June 2026) [cite: 1]</li>
-                [cite_start]<li><strong>Microsoft AZ-900:</strong> Azure Fundamentals [cite: 1]</li>
-                [cite_start]<li><strong>CCNA:</strong> Cisco Certified Network Associate [cite: 1]</li>
-                [cite_start]<li><strong>CompTIA:</strong> Security+, Network+, A+ [cite: 1]</li>
+                <li><strong>Microsoft AZ-104:</strong> Azure Administrator Associate (In Progress)</li>
+                <li><strong>Microsoft MS-102:</strong> Microsoft 365 Administration (Est. Completion: June 2026)</li>
+                <li><strong>Microsoft AZ-900:</strong> Azure Fundamentals</li>
+                <li><strong>CCNA:</strong> Cisco Certified Network Associate</li>
+                <li><strong>CompTIA:</strong> Security+, Network+, A+</li>
             </ul>
         </section>
 
