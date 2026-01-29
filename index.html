@@ -1,1 +1,214 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Kooiman | Senior IT Operations Specialist</title>
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --primary-color: #005a9e; /* Professional Corporate Blue */
+            --secondary-color: #f3f4f6;
+            --text-color: #333333;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; color: #111; letter-spacing: -0.5px; }
+        .title { color: var(--primary-color); font-weight: 600; font-size: 1.25rem; margin-top: 5px; }
+        .contact-bar { margin-top: 15px; font-size: 0.95rem; color: #555; }
+        .contact-bar a { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .contact-bar span { margin: 0 8px; color: #ccc; }
+
+        /* Sections */
+        section { margin-bottom: 50px; }
+        h2 { 
+            font-size: 1.5rem; 
+            border-left: 5px solid var(--primary-color); 
+            padding-left: 15px; 
+            margin-bottom: 20px; 
+            color: #111;
+        }
+
+        /* Experience Items */
+        .job-item { margin-bottom: 30px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+        .job-title { font-weight: bold; font-size: 1.1rem; color: #000; }
+        .company { color: #555; font-weight: 500; }
+        .date { color: #777; font-size: 0.9rem; font-style: italic; }
+        .job-details li { margin-bottom: 8px; color: #444; }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .skill-tag {
+            background: var(--secondary-color);
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #e5e5e5;
+        }
+
+        /* Certifications */
+        .cert-list { list-style: none; padding: 0; }
+        .cert-list li { 
+            background: #fcfcfc; 
+            border-left: 3px solid var(--primary-color);
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 0.85rem; }
+
+        @media (max-width: 600px) {
+            .job-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>David Kooiman</h1>
+            <div class="title">Senior IT Operations Specialist</div>
+            <div class="contact-bar">
+                Houston, TX
+                <span>|</span>
+                <a href="mailto:shastacon64@gmail.com">shastacon64@gmail.com</a>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/david-kooiman-09626813/">LinkedIn</a>
+                <span>|</span>
+                <a href="https://github.com/shastacon64">GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                [cite_start]Senior IT Operations Specialist with over 18 years of experience managing enterprise infrastructure across Government, Banking, Energy, and Retail sectors[cite: 1]. 
+                [cite_start]A versatile technical leader who bridges the gap between hands-on engineering—ranging from Data Center operations and Network Architecture to Endpoint Automation—and strategic operational improvement[cite: 1]. 
+                [cite_start]Proven track record of executing complex multi-site migrations, ensuring regulatory compliance (CJIS/Audit), and standardizing IT processes for efficiency[cite: 1].
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Cisco Networking (L2/L3, 9300 Switches)</div>
+                <div class="skill-tag">Microsoft Autopilot & Intune</div>
+                <div class="skill-tag">Tanium (Asset Mgmt & Patching)</div>
+                <div class="skill-tag">ServiceNow Incident Management</div>
+                <div class="skill-tag">VMware vSphere 6.5 / ESXi</div>
+                <div class="skill-tag">FortiGate Firewalls</div>
+                <div class="skill-tag">Windows Server / Active Directory</div>
+                <div class="skill-tag">Disaster Recovery (Veeam)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Engineering Labs & Projects</h2>
+            <div class="job-item">
+                <div class="job-title">Microsoft Azure Hacking Lab</div>
+                <p>Built a secure hacking lab in Azure to simulate an enterprise network. Deployed Windows Server 2022 Domain Controllers and segmented VNETs within Resource Groups to simulate subnets, utilizing Azure Monitor for performance tracking.</p>
+            </div>
+            <div class="job-item">
+                <div class="job-title">Cisco/Palo Alto Cloud Network</div>
+                <p>Deployed GNS3 in Azure to build Cisco networking topologies. Integrated Palo Alto firewalls and automated network changes using Python scripts and the Netmiko library.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior IT Operations Specialist</span>
+                        <span class="company"> | Veritex Bank</span>
+                    </div>
+                    <span class="date">Sept 2020 - Jan 2026</span>
+                </div>
+                <ul class="job-details">
+                    [cite_start]<li><strong>Network & Infrastructure:</strong> Maintain the integrity of Houston’s network infrastructure, including structured cabling in IDF rooms and troubleshooting Layer 2/3 issues on Cisco 9300 switches[cite: 1].</li>
+                    [cite_start]<li><strong>Endpoint Engineering:</strong> Streamline device lifecycle management by utilizing Microsoft Autopilot for automated deployments and Tanium for real-time asset management[cite: 1].</li>
+                    [cite_start]<li><strong>Process Improvement:</strong> Mentor IT Operations specialists and author technical documentation/SOPs to standardize team processes[cite: 1].</li>
+                    [cite_start]<li><strong>Executive Support:</strong> Provide "white-glove" technical support to executive leadership, ensuring rapid resolution of high-priority hardware issues[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">IT Analyst</span>
+                        <span class="company"> | Francesca's Collections</span>
+                    </div>
+                    <span class="date">May 2018 - March 2020</span>
+                </div>
+                <ul class="job-details">
+                    [cite_start]<li><strong>Retail Operations:</strong> Ensured business continuity for remote retail locations by providing Tier 2 support for Oracle Xstore POS and hardware peripherals[cite: 1].</li>
+                    [cite_start]<li><strong>Remote Network Admin:</strong> Managed connectivity and security for distributed sites, troubleshooting FortiGate firewalls to minimize store downtime[cite: 1].</li>
+                    [cite_start]<li><strong>System Monitoring:</strong> Proactively monitored health and workstation performance across remote sites to identify outages before impact[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Systems Engineer</span>
+                        <span class="company"> | Church Services</span>
+                    </div>
+                    <span class="date">June 2016 - Sept 2017</span>
+                </div>
+                <ul class="job-details">
+                    [cite_start]<li><strong>Infrastructure Migration:</strong> Orchestrated a complete IT infrastructure relocation (Windows/Network), migrating the data center and remote sites in just seven days with minimal downtime[cite: 1].</li>
+                    [cite_start]<li><strong>Virtualization:</strong> Managed a VMware vSphere 6.5 environment, optimizing Type 1 hypervisor performance by analyzing resource metrics[cite: 1].</li>
+                    [cite_start]<li><strong>Network Security:</strong> Secured the edge using WatchGuard M570 appliances and implemented VoIP solutions for remote site connectivity[cite: 1].</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul class="cert-list">
+                [cite_start]<li><strong>Microsoft AZ-400:</strong> Azure Administrator (Est. Completion: March 2026) [cite: 1]</li>
+                [cite_start]<li><strong>Microsoft MS-102:</strong> Microsoft 365 Administration (Est. Completion: June 2026) [cite: 1]</li>
+                [cite_start]<li><strong>Microsoft AZ-900:</strong> Azure Fundamentals [cite: 1]</li>
+                [cite_start]<li><strong>CCNA:</strong> Cisco Certified Network Associate [cite: 1]</li>
+                [cite_start]<li><strong>CompTIA:</strong> Security+, Network+, A+ [cite: 1]</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 David Kooiman. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
