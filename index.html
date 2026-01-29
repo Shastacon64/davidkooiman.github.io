@@ -5,61 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Kooiman | IT Professional</title>
     <style>
-        /* --- CSS STYLES --- */
+        /* --- PROFESSIONAL WHITE THEME --- */
         :root {
-            --primary-color: #005a9e; /* Professional Corporate Blue */
-            --secondary-color: #f3f4f6;
+            --primary-color: #005a9e; /* Corporate Blue */
+            --bg-color: #ffffff;
             --text-color: #333333;
+            --light-gray: #f3f4f6;
             --border-color: #e5e7eb;
+            --nav-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
-            background-color: #ffffff;
+            background-color: var(--bg-color);
             margin: 0;
             padding: 0;
         }
 
+        /* --- NAVIGATION BAR --- */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: var(--nav-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: #111;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .resume-btn {
+            background-color: var(--primary-color);
+            color: #fff !important;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .resume-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        /* --- LAYOUT --- */
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
-        /* Header */
         header {
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
-        h1 { margin: 0; font-size: 2.5rem; color: #111; letter-spacing: -0.5px; }
-        
-        .contact-bar { margin-top: 15px; font-size: 0.95rem; color: #555; }
+        .contact-bar { 
+            font-size: 0.95rem; 
+            color: #555; 
+        }
         .contact-bar a { color: var(--primary-color); text-decoration: none; font-weight: 500; }
         .contact-bar span { margin: 0 8px; color: #ccc; }
 
-        /* Sections */
-        section { margin-bottom: 50px; }
+        section { margin-bottom: 60px; }
+        
         h2 { 
             font-size: 1.5rem; 
             border-left: 5px solid var(--primary-color); 
             padding-left: 15px; 
-            margin-bottom: 20px; 
+            margin-bottom: 25px; 
             color: #111;
         }
 
-        /* Experience Items */
-        .job-item { margin-bottom: 30px; }
+        /* CARDS & ITEMS */
+        .job-item { 
+            margin-bottom: 35px; 
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .job-item:last-child { border-bottom: none; }
+
         .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
         .job-title { font-weight: bold; font-size: 1.1rem; color: #000; }
         .company { color: #555; font-weight: 500; }
         .date { color: #777; font-size: 0.9rem; font-style: italic; }
         .job-details li { margin-bottom: 8px; color: #444; }
 
-        /* Certifications */
+        /* CERTIFICATIONS */
         .cert-list { list-style: none; padding: 0; }
         .cert-list li { 
             background: #fcfcfc; 
@@ -71,31 +144,37 @@
 
         footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 0.85rem; }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; gap: 15px; padding: 15px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; }
             .job-header { flex-direction: column; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>David Kooiman</h1>
-            <div class="contact-bar">
-                Houston, TX
-                <span>|</span>
-                <a href="mailto:shastacon64@gmail.com">shastacon64@gmail.com</a>
-                <span>|</span>
-                713-677-9250
-                <span>|</span>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">David Kooiman</a>
+            
+            <div class="nav-links">
+                <a href="#who-am-i">Who Am I</a>
+                <a href="#working-on">What I am working on</a>
+                <a href="#experience">Experience</a>
                 <a href="https://www.linkedin.com/in/david-kooiman-09626813/">LinkedIn</a>
-                <span>|</span>
                 <a href="https://github.com/shastacon64">GitHub</a>
+                <a href="Resume 2026 reve.pdf" class="resume-btn" download>Download Resume</a>
             </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <header>
         </header>
 
-        <section>
-            <h2>Professional Summary</h2>
+        <section id="who-am-i">
+            <h2>Who Am I</h2>
             <p>
                 Senior IT Operations Specialist with over 18 years of experience managing enterprise infrastructure across Government, Banking, Energy, and Retail sectors. 
                 A versatile technical leader who bridges the gap between hands-on engineering—ranging from Data Center operations and Network Architecture to Endpoint Automation—and strategic operational improvement. 
@@ -103,7 +182,7 @@
             </p>
         </section>
 
-        <section>
+        <section id="working-on">
             <h2>What I am working on</h2>
             <p style="font-style: italic; color: #666; margin-bottom: 20px;">
                 Current personal development projects focused on Cloud Administration and Architecture.
@@ -111,7 +190,9 @@
             
             <div class="job-item">
                 <div class="job-title">Azure Administrator Infrastructure Lab (AZ-104 Prep)</div>
-                <div style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">Technologies: Azure VNETs, Network Security Groups (NSGs), Storage Accounts, RBAC</div>
+                <div style="font-size: 0.9rem; color: #555; margin-bottom: 10px; font-weight: 500;">
+                    Technologies: Azure VNETs, Network Security Groups (NSGs), Storage Accounts, RBAC
+                </div>
                 <p>
                     Designed and deployed a hybrid cloud environment to master core Azure administrative tasks. 
                     Configured VNET peering between regions to test connectivity and implemented Network Security Groups (NSGs) to control traffic flow. 
@@ -121,7 +202,9 @@
 
             <div class="job-item">
                 <div class="job-title">Microsoft 365 Enterprise Lab (MS-102 Prep)</div>
-                <div style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">Technologies: Microsoft 365 Developer Tenant, Entra ID (Azure AD), Intune, PowerShell</div>
+                <div style="font-size: 0.9rem; color: #555; margin-bottom: 10px; font-weight: 500;">
+                    Technologies: Microsoft 365 Developer Tenant, Entra ID (Azure AD), Intune, PowerShell
+                </div>
                 <p>
                     Configured a comprehensive Microsoft 365 Developer Tenant to simulate a real-world enterprise environment. 
                     Key configurations include setting up custom domains, managing user identities via Entra ID, and implementing Conditional Access policies to secure resources. 
@@ -130,7 +213,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="experience">
             <h2>Professional Experience</h2>
 
             <div class="job-item">
@@ -191,7 +274,6 @@
                     <li><strong>Infrastructure Migration:</strong> Orchestrated a complete IT infrastructure relocation (Data Center & Remote Sites) in just seven days with minimal downtime.</li>
                     <li><strong>Virtualization:</strong> Managed a VMware vSphere 6.5 environment, analyzing resource metrics to right-size CPU/RAM for guest VMs.</li>
                     <li><strong>Network Security:</strong> Secured the edge using WatchGuard M570 appliances and implemented VoIP solutions.</li>
-                    <li><strong>Admin:</strong> Managed Active Directory, Exchange 2010, SQL Server 2012, and Veeam backup strategies.</li>
                 </ul>
             </div>
 
@@ -254,7 +336,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="certs">
             <h2>Certifications</h2>
             <ul class="cert-list">
                 <li><strong>Microsoft AZ-104:</strong> Azure Administrator Associate (In Progress)</li>
